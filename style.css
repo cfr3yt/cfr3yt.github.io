@@ -1,23 +1,25 @@
+
 a {
   color: amber;
-
 }
+
 body {
   font-family: Verdana, sans-serif;
   margin-left: 10%;
   margin-right: 10%;
+  background-color: grey;
+  text-align: center;
 }
+
+
 h1 {
   color: red;
   font-weight: bold;
   text-align: center;
 }
 
-body {
-  background-color: grey;
-  text-align: center;
-}
 
 p {
   color: white;
 }
+
