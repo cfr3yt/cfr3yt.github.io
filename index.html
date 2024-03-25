@@ -41,6 +41,10 @@
             countobj = document.getElementById("count");
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
+
+            if (i <= 0) {
+                countobj.innerHTML = "<b><font size='+5'>BOOM!</b>";
+            }
         }
     </script>
 </body>  
