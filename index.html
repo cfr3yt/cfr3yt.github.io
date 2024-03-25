@@ -29,5 +29,19 @@
   <p>
     <a href="https://cfr3yt.github.io./channeler.html">Channelers</a>
   </p>
+  <h1>Exploring the DOM</h1>
+
+    <h2>Count Down: <span id="count">20</span></h2>
+    <button onclick="updateCount()">Next</button>
+  <script>
+        var i = 20;
+
+        function updateCount() {
+            i = i - 1;
+            countobj = document.getElementById("count");
+            console.log("Updating object: " + countobj);
+            countobj.innerHTML = "<b>" + i + "</b>";
+        }
+    </script>
 </body>  
 </html>
