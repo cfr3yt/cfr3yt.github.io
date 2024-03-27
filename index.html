@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="/style.css" type="text/css">
 </head>
 
-  
+
   <h1> Fundamentals of Magic in the Wheel of Time
   <style>
     h1 {
@@ -46,8 +46,14 @@
                 countobj.innerHTML = "<b><font size='+5'>BOOM!</b>";
                 document.body.style.backgroundColor = "white"; 
                 document.body.style.color = "black"; 
-            }
+            } else { 
+              var redness = (20-i)*12;
+              redness = Math.min(redness,255);
+              document.body.style.backgroundColor = "rgb("+ redness + ", 0, 0)";
         }
+        } 
     </script>
+     <div id="count"><b>20</b></div>
+    <button onclick="updateCount()">Update Count</button>
 </body>  
 </html>
