@@ -23,8 +23,8 @@ btn.addEventListener('click',()=>{
             innerP.classList.add('particle', 'move');
             innerP.style.transform = 'translate(${x}, ${y})';
 
-            const xs =math.random() *200-100 +'px';
-            const ys =math.random() *200-100 + 'px';
+            const xs =Math.random() *200-100 +'px';
+            const ys =Math.random() *200-100 + 'px';
 
             innerP.style.setProperty('--x', 'calc(${x} + ${xs})');
 
@@ -50,7 +50,6 @@ function randomLocation() {
 }
 
 function randomColor(){
-    return 'hsl($(Math.floor(Math.random()*362)}, 100%, 50%)';
+    return 'hsl(${Math.floor(Math.random()*362)}, 100%, 50%)';
 }
     
-}) 
