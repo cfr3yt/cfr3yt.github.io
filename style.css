@@ -8,6 +8,9 @@
 .slider img{
   width:100%
   display:none;
+}
+img.displaySlide{
+  display:block;
 a {
   color: amber;
 }
