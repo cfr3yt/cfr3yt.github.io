@@ -35,6 +35,10 @@
     <button onclick="updateCount()">Next</button>
     <button onclick="makeBlue()">Make Blue</button> 
   <script>
+
+    document.getElementById("nextButton").addEventListener("click", updateCount);
+    document.getElementById("blueButton").addEventListener("click", makeBlue);
+    
         var i = 20;
 
         function updateCount() {
