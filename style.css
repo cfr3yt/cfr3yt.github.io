@@ -1,16 +1,19 @@
-
-.slider{
-  position:relative;
-  width:100%
+.slider {
+  position: relative;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
-.slider img{
-  width:100%
-  display:none;
+
+.slider img {
+  width: 100%;
+  display: none;
 }
-img.displaySlide{
-  display:block;
+
+img.displaySlide {
+  display: block;
+}
+
 a {
   color: amber;
 }
@@ -23,13 +26,11 @@ body {
   text-align: center;
 }
 
-
 h1 {
   color: red;
   font-weight: bold;
   text-align: center;
 }
-
 
 p {
   color: white;
@@ -38,47 +39,52 @@ p {
 button {
   background-color: rebeccapurple;
   border-radius: 5px;
-  box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.15); 
   border: none;
-  color: white; 
-  padding: 1rem 2rem; 
+  color: white;
+  padding: 1rem 2rem;
   position: relative;
   transition: transform 0.1s linear, box-shadow 0.1s 1;
   z-index: 10;
 }
-button:active{
+
+button:hover {
+  background-color: purple; /* Change button background color on hover */
+}
+
+button:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 rebeccapurple;
 }
-button:focus { 
-    outline: none; 
+
+button:focus {
+  outline: none;
 }
-.particle{} 
-  --x:0;
-  --y:0; 
-background-color: rebeccapurple;
-border-radius: 50%;
-position:absolute;
-top:50%
-left:50%
-height:5px;
-width:5px;
-z-index:-1;
+
+.particle {
+  --x: 0;
+  --y: 0;
+  background-color: rebeccapurple;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 5px;
+  width: 5px;
+  z-index: -1;
 }
-.particle.move{
-    animation: move 1000ms linear forwards; 
+
+.particle.move {
+  animation: move 1000ms linear forwards;
 }
+
 @keyframes move {
-  to{
+  to {
     transform: translate(var(--x), var(--y));
   }
   95% {
     opacity: 1;
   }
-  100%{
-    opacity:0;
+  100% {
+    opacity: 0;
   }
-} 
-    
-
-
+}
