@@ -44,7 +44,7 @@ btn.addEventListener('click',()=>{
 function randomLocation() {
     return{
         x:Math.random() * window.innerWidth - window.innerWidth / 2 + 'px',
-        y:Math.random() * window.innderHeight- window.innerHeight / 2 + 'px',
+        y:Math.random() * window.innerHeight- window.innerHeight / 2 + 'px',
         
     }
 }
