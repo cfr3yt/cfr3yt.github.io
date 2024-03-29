@@ -52,3 +52,24 @@ function randomLocation() {
 function randomColor() {
     return `hsl(${Math.floor(Math.random() * 362)}, 100%, 50%)`;
 }
+
+const slides = document.querySelectorAll(".slides img");
+let slideIndex = 0;
+let intervalid = null;
+
+initializeSlider();
+
+function initializeSlider(){
+
+    slides[slideIndex].classList.add("displaySlide");
+
+}
+function showSlide(indez){
+
+}
+function prevSlide(){
+
+}
+function nextSlide(){
+
+}
