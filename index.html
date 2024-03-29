@@ -23,6 +23,22 @@
     }
   </style>
   </head>
+    .particle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .move {
+      animation: move 1s linear infinite;
+    }
+    @keyframes move {
+      to {
+        transform: translate(var(--x), var(--y));
+      }
+    }
+  </style>
     <body> 
   </h1>
   <img src="https://wallup.net/wp-content/uploads/2019/09/274760-symbol-books-wheel-of-time-series-logos-robert-jordan.jpg" alt="Description of the image" width="300" height="225">
