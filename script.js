@@ -18,7 +18,7 @@ btn.addEventListener('click',()=>{
     particles.push(particle);
 
     setTimeout(() => {
-        for(Let i=0; i<100; i++) {
+        for(let i=0; i<100; i++) {
             const innerP = document.createElement('span');
             innerP.classList.add('particle', 'move');
             innerP.style.transform = 'translate(${x}, ${y})';
@@ -50,7 +50,7 @@ function randomLocation() {
 }
 
 function randomColor(){
-    return `hsl($(Math.floor(Math.random()*362)}, 100%, 50%)`;
+    return 'hsl($(Math.floor(Math.random()*362)}, 100%, 50%)';
 }
     
 }) 
