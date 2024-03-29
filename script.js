@@ -31,7 +31,7 @@ btn.addEventListener('click',()=>{
             innerP.style.animationDuration = Math.random() * 300 + 200 + 'ms' ;
             innerP.style.background = color;
 
-            btn.appenChild(innerP);
+            btn.appendChild(innerP);
             particles.push(innerP) 
         }
         setTimeout(()=> {
@@ -50,7 +50,7 @@ function randomLocation() {
 }
 
 function randomColor(){
-    return`hsl($(Math.floor(Math.random()*362)},
-    100%, 50%)`;
+    return `hsl($(Math.floor(Math.random()*362)}, 100%, 50%)`;
+}
     
 }) 
