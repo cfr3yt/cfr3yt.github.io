@@ -64,7 +64,7 @@ function initializeSlider(){
     slides[slideIndex].classList.add("displaySlide");
 
 }
-function showSlide(indez){
+function showSlide(index){
 
 }
 function prevSlide(){
